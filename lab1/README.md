@@ -56,3 +56,12 @@ Script creates a couple of OVS bridges br0 and br1, and connects each one to a n
 	    active slave
 	    may_enable: true
 
+
+    root@node1:/home/vagrant/nic-bonding# tcpdump -eni br1p0
+    tcpdump: WARNING: br1p0: no IPv4 address assigned
+    tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+    listening on br1p0, link-type EN10MB (Ethernet), capture size 65535 bytes
+    14:36:17.765553 b2:5e:99:f5:7f:4d > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+    14:36:17.766340 42:21:0d:71:f2:89 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+    14:36:47.767521 b2:5e:99:f5:7f:4d > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+    14:36:47.769353 42:21:0d:71:f2:89 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110

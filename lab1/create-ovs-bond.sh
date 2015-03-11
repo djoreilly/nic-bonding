@@ -34,6 +34,7 @@ ip link set dev br0p1 up
 ip link set dev br1p1 up
 
 
+# one side can be passive
 ovs-vsctl add-bond br0 bond0 br0p0 br0p1 lacp=active
 ovs-vsctl add-bond br1 bond1 br1p0 br1p1 lacp=active
 
