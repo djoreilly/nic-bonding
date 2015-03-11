@@ -1,4 +1,4 @@
-# nic-bonding
+# link agg between 2 switches
 
 Script creates a couple of OVS bridges br0 and br1, and connects each one to a namespace using a veth. The namespaces have an IP address. Then two more veths are created and used to create a bonded link between the two bridges. See [diagram.](https://drive.google.com/file/d/0B0HB7skV7D-AX1RUX3pUMU5XaDQ/view?usp=sharing)
 
